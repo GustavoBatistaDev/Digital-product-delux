@@ -117,7 +117,7 @@ body {
   border-radius: 16px;
   font-size: 16px;
   cursor: pointer;
-  margin-right: 2px;
+  margin-right: 4px;
   margin-bottom: 4px;
   display: flex;
   align-items: center;
@@ -189,7 +189,7 @@ body {
   }
 
   .button {
-    margin: 8px 0;
+    margin: 8px 4px;
   }
 }
 
@@ -200,6 +200,7 @@ body {
       " col-2";
     padding-top: 0px;
     gap: 0;
+
   }
 
   .nav-list {
@@ -213,9 +214,11 @@ body {
     justify-content: center;
     flex-direction: column;
     height: 100vh;
+
   }
 
   .col-main-ilustration {
+
     grid-area: col-2;
     max-width: 500px;
     display: flex;
@@ -241,9 +244,13 @@ body {
   }
 
   .button {
-    margin: 4px 0;
+    margin: 4px;
     margin-top: 8px;
     height: 45px;
+  }
+
+  .container-button {
+    display: block;
   }
 }
 
