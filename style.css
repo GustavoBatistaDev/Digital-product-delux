@@ -77,6 +77,10 @@ body {
   margin: 16px 0;
 }
 
+.container-button {
+  display: flex;
+}
+
 .main-para {
   color: #cecece;
   margin: 16px 0;
