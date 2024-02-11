@@ -14,26 +14,8 @@
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        let heroSection = document.querySelector(".hero");
-        let scrollPosition = window.pageYOffset;
-        let sectionPosition =
-          heroSection.getBoundingClientRect().top + scrollPosition;
-        let screenHeight = window.innerHeight;
-
-        if (sectionPosition < screenHeight) {
-          heroSection.classList.add("show");
-        }
-
-        window.addEventListener("scroll", function () {
-          let scrollPosition = window.pageYOffset;
-          let sectionPosition =
-            heroSection.getBoundingClientRect().top + scrollPosition;
-          let screenHeight = window.innerHeight;
-
-          if (sectionPosition < screenHeight) {
-            heroSection.classList.add("show");
-          }
-        });
+        var mainContent = document.querySelector(".main-content");
+        mainContent.classList.add("show"); // Adiciona a classe 'show' para iniciar a animação
       });
     </script>
   </head>
@@ -48,7 +30,7 @@
         </ul>
       </nav>
     </header>
-    <main class="main-content">
+    <main class="main-content hero">
       <div class="col-main-text">
         <button class="new-site">NEW WEBSITE</button>
         <h1 class="main-title">

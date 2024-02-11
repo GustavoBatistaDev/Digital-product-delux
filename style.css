@@ -166,6 +166,19 @@ body {
   animation: loopElement 10s linear infinite;
 }
 
+.main-content .col-main-text,
+.main-content .col-main-ilustration {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 4s ease-out, transform 4s ease-out;
+}
+
+.main-content.show .col-main-text,
+.main-content.show .col-main-ilustration {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 @media (max-width: 1280px) {
   .main-title {
     color: white;
